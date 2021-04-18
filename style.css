@@ -146,7 +146,18 @@ main {
     color: #757575;
 }
 
+.main-tables-container {
+    display: flex;
+	overflow-x: scroll;
+	overscroll-behavior-x:contain;
+	scroll-snap-type:  x proximity;
+	padding-top: 4rem;
+    min-height: 316px;
+    margin: 0 40px;
+}
 .main-currency-table, .main-comision-table {
+    scroll-snap-align: center ;
+    position: relative;
     width: 70%;
     min-width: 235px;
     max-width: 500px;
@@ -355,7 +366,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 
 .bitcoin-img-container {
     width: 100%;
-    max-width: 320px;
+    min-width: 320px;
     height: 50vh;
     background-image: url("./assets/img/bitcoinbaby2x.jpg");
     background-size: cover;
@@ -409,7 +420,7 @@ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
 	overscroll-behavior-x:contain;
 	scroll-snap-type:  x proximity;
 	padding-top: 4rem;
-    height: 316px;
+    min-height: 316px;
     margin: 0 40px;
  }
  
